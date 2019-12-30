@@ -34,4 +34,32 @@ class CategoryController extends Controller
         //dd(request()->nama); //to know data content that insert into database
         return redirect('/category');
     }
+
+    public function edit($id)
+    {
+        $category = category::where('id', $id)->first();
+         return view('category/edit'[
+             'category' => $category
+         ]);
+    }
+
+    public function update($id)
+    {
+        $category = category::where('id', $id)->first();
+        $category->update([
+            'name' => request('nama'),
+            'description' => request('description')
+        ]);
+
+        return redirect('/category');
+    }
+
+    public function destroy($id)
+    {
+        $category = category::where('id', $id)->first();
+        $category->delete();
+
+        return redirect('/category');
+    }
+
 }
