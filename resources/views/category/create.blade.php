@@ -13,7 +13,7 @@
         </div>
         <div class="form-group">
             <label>Description</label>
-            <textarea class="form-control" description="description" placeholder="input description" cols="30" rows="10"></textarea>
+            <textarea class="form-control" name="description" placeholder="input description" cols="30" rows="10"></textarea>
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-primary">save</button>

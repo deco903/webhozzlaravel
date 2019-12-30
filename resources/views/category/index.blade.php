@@ -12,14 +12,28 @@
                 <th>#</th>
                 <th>Name</th>
                 <th>Description</th>
+                <th>Create AT</th>
+                <th>Update AT</th>
             </tr>
         </thead>
         <tbody>
+            @php
+                //buat nomor urutan
+                $num =0;
+            @endphp
+                @foreach($categories as $item)
+            @php
+                $num++;
+            @endphp
+
             <tr>
-                <td>1</td>
-                <td>Pomade</td>
-                <td>New hair cute</td>
+                <td>{{ $num }}</td>
+                <td>{{ $item->name }}</td>
+                <td>{{ $item->description}}</td>
+                <td>{{ $item->created_at}}</td>
+                <td>{{ $item->updated_at}}</td>
             </tr>
+            @endforeach
         </tbody>
     </table>
    </div>

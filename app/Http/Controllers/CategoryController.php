@@ -9,8 +9,10 @@ class CategoryController extends Controller
 {
     public function index(){
         $title = 'category page';
+        $rows = Category::all();
         return view ('category.index',[
-            'title' => $title
+            'title' => $title,
+            'categories' => $rows
         ]);
     }
 
