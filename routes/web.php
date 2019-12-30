@@ -12,9 +12,14 @@
 */
 
 
-
+//show table
 Route::get('/category','CategoryController@index');
+//show form
 Route::get('/category/create','CategoryController@create');
+//insert database
+Route::post('/category','CategoryController@store');
+
+
 
 Route::get('/', function () {
     $message = "laravel is awesome";
