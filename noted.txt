@@ -1,0 +1,6 @@
+Mtaeri pertemuan II
+
+pengenalan controler dan query ke database
+migration
+laayouting bootstrap
+buat form
