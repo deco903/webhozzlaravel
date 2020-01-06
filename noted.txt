@@ -4,3 +4,15 @@ pengenalan controler dan query ke database
 migration
 laayouting bootstrap
 buat form
+
+============================================================
+
+pertanyaan untuk pertemuan ke3
+
+pada route (web.php) apakah method ctore boleh menggunakan URL dengan '/category/create'??
+bagaminan cara melihat masing2 field dari sebuah tabel yang ada di datbase??
+apa fungsi dari 'category::create' pada function store di class categorycontroller? 
+jelaskna lagi mengapa pada form edit.blade.php ada 2 method (post dan put) pada tampilan @method
+apa fungsi method delete pada aksi delete?
+
+

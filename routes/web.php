@@ -17,7 +17,7 @@ Route::get('/category','CategoryController@index');
 //show form
 Route::get('/category/create','CategoryController@create');
 //insert database
-Route::post('/category','CategoryController@store');
+Route::post('/category/create','CategoryController@store');
 
 Route::get('/category/{id}/edit','CategoryController@edit');
 

@@ -5,7 +5,7 @@
 @section('content')
     <h3>Create new category</h3><hr>
     <a href="/category/" class="btn btn-info mb-2">Back to Table</a>
-   <form action="/category" method="POST">
+   <form action="/category/create" method="POST">
    @csrf
         <div class="form-group">
             <label>Name</label>
